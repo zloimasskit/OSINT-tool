@@ -1,10 +1,10 @@
 import colorama
-import snos
+from snos import snos 
 blue = colorama.Fore.LIGHTBLUE_EX
 print(blue + """
             +============================+
             |..#######...######..########|
-            |.##.....##.##....##....##...|
+            |.##.....##.##....##....##...|1
             |.##.....##.##..........##...|
             |.##.....##..######.....##...|
             |.##.....##.......##....##...|
@@ -19,7 +19,7 @@ phone = ""
 id = ""
 choice = int(input("вариант: "))
 if (choice == 1):
-    id = input("введите id: ")
-    phone = input("введите номер: ")
-    snos.snos.session(phone, id)
+    id = str(input("введите id: "))
+    phone = str(input("введите номер: "))
+    snos.session(phone, id)
 
